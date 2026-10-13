@@ -7,7 +7,7 @@ class Solution {
             if(hcf == 1){
                 return true;
             }
-                return false;
+            return false;
         }
     
     public int gcd(int divisor, int dividend){
