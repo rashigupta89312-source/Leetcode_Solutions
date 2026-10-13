@@ -7,20 +7,20 @@ class Solution {
         int end = num/2;
         while(start <= end){
             int mid = start + (end - start) / 2;
-            System.out.println("mid="+mid);
+            
             long sq = (long)mid*mid;
             if(sq == num){
                 return true;
             }
             else if(sq < num){
-                System.out.println("sq<num");
+            
                 start=mid+1;
-                System.out.println("start="+start);
+            
             }
             else if(sq > num){
-                System.out.println("sq>num");
+            
                 end=mid-1;
-                System.out.println("end="+end);
+            
             }
         }
         return false;
